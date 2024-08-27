@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deposit</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+       <div class="content">
+        <div class="header">
+            <a href="index.html"><img src="images/icons8-left-50.png" alt="_back"></a>
+        </div>
+
+        <div class="contianerBody">
+            <h4>DEPOSIT</h4>
+            <div class="depositForm">
+                <form action="#" id="form">
+                    <div class="formClass">
+                        <select name="transc" id="method">
+                            <option value="">-- Select method --</option>
+                            <option value="BankTransfer">Bank Transfer</option>
+                            <option value="DebitCard">Debit Card</option>
+                            <option value="BranchDeposit">Branch Deposit</option>
+                            <option value="BankDeposit">Bank Deposit</option>
+                        </select>
+                    </div>
+                    <div class="formClass">
+                        <input type="text" placeholder="" name="text" id="amount">
+                        <label for="amount" class="label">Amount</label>
+                    </div>
+
+                    <div class="generateBtn bankTF hide">
+                        <button class="generate" id="generate" formaction="">Generate Account</button>
+                    </div>
+                    <div class="generateBtn debit hide">
+                        <button class="generate" id="debitProcess" formaction="">Process</button>
+                    </div>
+                    <div class="generateBtn Branch hide">
+                        <button class="generate" id="generateBD" formaction="">Generate Account</button>
+                    </div>
+                    <div class="location_card hide">
+                        <div class="card_head">
+                            <h4 id="methodTitle">Bank Transfer</h4>
+                        </div>
+                        <div class="card_body">
+                            <div class="bank">
+                                <h4 id="name">Bank Name:</h4>
+                                <p id="bank_name">Zenith Bank</p>
+                            </div>
+
+                            <div class="bank">
+                                <h4 id="number">Account Number:</h4>
+                                <p id="bank_id">2356489562</p>
+                            </div>
+
+                            <div class="bank">
+                                <h4 id="acName">Account Name:</h4>
+                                <p id="account_id">PayloBTR02</p>
+                            </div>
+
+                            <div class="bank">
+                                <h4>Amount to Deposit:</h4>
+                                <p id="amount_bal">N 5,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="bankTFbtn" class="hide">I have Transfer The Money</button>
+                    <button id="cardTFbtn" class="hide">Procced</button>
+                    <button id="DepositBtn" class="hide">I have Deposited The Money</button>
+                </form>
+            </div>
+        </div>
+       </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
